@@ -28,10 +28,7 @@ function askQuestion(questionNumber) {
             question.innerHTML = "Go to Mars, or stay home?";
             break;
         case 2:
-            question.innerHTML = "Risk it, or go home.";
-            break;
-        case 3:
-            question.innerHTML = "Starve, or eat the cat";
+            question.innerHTML = "Risk it, or eat Gizmo.";
             break;
         default:
             break;
@@ -77,8 +74,8 @@ function continueStory(answerNumber) {
         case 2:
             if (answers[2] === "RISK IT") {
                 story.innerHTML = document.getElementById("answer21").innerHTML;
-                askQuestion(2);
-            } else if (answers[2] === "GO HOME") {
+                theEnd();
+            } else if (answers[2] === "EAT GIZMO") {
                 story.innerHTML = document.getElementById("answer22").innerHTML;
                 theEnd();
             } else {
@@ -87,14 +84,6 @@ function continueStory(answerNumber) {
 
             }
             break;
-        case 3:
-            if (answer[3] === "eat the cat") {
-                story.innerHTML = document.getElementById("answer 23").innerHTML;
-                theEnd();
-            } else if (answer[3] === "EAT THE CAT") {
-                story.innerHTML = document.getElementById("answer 24").innerHTML;
-                theEnd();
-            }
         default:
             story.innerHTML = "The story is over!";
 

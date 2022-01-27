@@ -8,7 +8,7 @@ p {
     background-color: blue;
     width: 30%;
     height: 30%;
-    border-radius: 10%;
+    border-radius: 50%;
 }
 .arm {
     background-color: #cacaca;
@@ -30,12 +30,12 @@ p {
 #righteye {
     position: absolute;
     left: 10%;
-    top: 20%;
+    top: 10%;
 }
 #lefteye {
     position: absolute;
     left: 60%;
-    top: 20%;
+    top: 10%;
 }
 #nose {
     position: absolute;
@@ -66,8 +66,7 @@ p {
 
 #rightarm {
     position:absolute;
-    left:22%;
-    
+    left: 22%;
     
 }
 #leftarm {
